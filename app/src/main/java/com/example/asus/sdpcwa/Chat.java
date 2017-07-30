@@ -25,7 +25,7 @@ public class Chat extends AppCompatActivity {
         setContentView(R.layout.activity_chat);
         String[] fruits = new String[] {
                 "Cape Gooseberry",
-                "Capuli cherry"
+                "Capuli cherrya"
         };
 
         // Create a List from String Array elements
