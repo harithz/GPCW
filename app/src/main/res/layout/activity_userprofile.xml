@@ -4,27 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.asus.sdpcwa.Userprofile">
+    tools:context="com.example.asus.sdpcwa.Userprofile"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <EditText
         android:id="@+id/DFN"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="42dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="First"
-        app:layout_constraintRight_toLeftOf="@+id/DLN"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/DG"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DLN"
+        tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="31dp"
-        app:layout_constraintLeft_toLeftOf="@+id/DG"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
 
     <EditText
         android:id="@+id/DLN"
@@ -33,12 +29,13 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Last"
-        android:layout_marginStart="155dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/DFN"
-        tools:layout_constraintBaseline_creator="1"
+        android:layout_marginStart="38dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/DUN"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="155dp" />
+        app:layout_constraintLeft_toLeftOf="@+id/DUN"
+        android:layout_marginLeft="38dp" />
 
     <EditText
         android:id="@+id/DG"
@@ -48,16 +45,12 @@
         android:inputType="textPersonName"
         android:text="gender"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="26dp"
-        app:layout_constraintBottom_toBottomOf="@+id/DA"
-        android:layout_marginTop="92dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/DFN"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/DFN"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="92dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="26dp"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintLeft_toLeftOf="@+id/DFN" />
 
     <EditText
         android:id="@+id/DA"
@@ -67,25 +60,24 @@
         android:inputType="textPersonName"
         android:text="age"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="184dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/DG"
+        android:layout_marginTop="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/DG"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="16dp" />
+        app:layout_constraintLeft_toLeftOf="@+id/DG" />
 
     <Button
         android:id="@+id/ES"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="29dp"
         android:text="EDIT"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DA"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Log"
+        tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
 
     <Button
         android:id="@+id/Map"
@@ -93,29 +85,21 @@
         android:layout_height="wrap_content"
         android:text="MAP"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginStart="38dp"
-        android:layout_marginEnd="39dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintTop_toBottomOf="@+id/DA"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/DLN"
-        android:layout_marginLeft="38dp"
-        android:layout_marginRight="39dp" />
+        app:layout_constraintLeft_toRightOf="@+id/FL" />
 
     <Button
         android:id="@+id/FL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Friend list"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/chat"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Map"
+        tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/chat"
         android:layout_marginLeft="16dp" />
 
     <Button
@@ -123,12 +107,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="chat"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Map"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/Map"
+        android:layout_marginLeft="6dp" />
+
+    <EditText
+        android:id="@+id/DUN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_marginStart="113dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="2dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="113dp" />
+
+    <Button
+        android:id="@+id/Log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintRight_toLeftOf="@+id/Del"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="26dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginRight="9dp" />
+
+    <Button
+        android:id="@+id/Del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="19dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="42dp"
-        android:layout_marginRight="39dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/Log"
+        tools:layout_constraintBaseline_creator="1"
+        android:layout_marginRight="19dp" />
 
 </android.support.constraint.ConstraintLayout>

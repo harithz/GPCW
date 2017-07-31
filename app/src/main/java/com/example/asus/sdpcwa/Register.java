@@ -52,13 +52,13 @@ public class Register extends AppCompatActivity {
                     try {
                         JSONObject jsonResponse = new JSONObject(response);
                         boolean success = jsonResponse.getBoolean("success");
-                        etUsername.setText("try");
+
                         if (success) {
-                            etUsername.setText("send");
+
                             Intent intent = new Intent(Register.this, Login.class);
                             Register.this.startActivity(intent);
                         } else {
-                            etUsername.setText("notsend");
+
                             AlertDialog.Builder builder = new AlertDialog.Builder(Register.this);
                             builder.setMessage("Register Failed")
                                     .setNegativeButton("Retry", null)

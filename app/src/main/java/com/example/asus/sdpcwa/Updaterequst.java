@@ -11,7 +11,7 @@ import java.util.Map;
  */
 
 public class Updaterequst extends StringRequest {
-    private static final String REGISTER_REQUEST_URL = "http://cwweb.000webhostapp.com/Register.php";
+    private static final String REGISTER_REQUEST_URL = "http://cwweb.000webhostapp.com/Update.php";
     private Map<String, String> params;
 
     public Updaterequst(String Username, String Password, String Firstname, String Lastname , int Age, String Gender, Response.Listener<String> listener) {
